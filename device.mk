@@ -33,3 +33,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 # LCD
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ro.sf.lcd_density=480
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
+    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
