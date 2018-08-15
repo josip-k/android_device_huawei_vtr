@@ -18,3 +18,6 @@
 
 # inherit from Huawei common 
 include device/huawei/common/BoardConfigCommon.mk
+
+# OTA Assert
+TARGET_OTA_ASSERT_DEVICE := phone
