@@ -34,7 +34,22 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ro.sf.lcd_density=480
 
+# NFC
+PRODUCT_PACKAGES += \
+    NfcNci \
+    libnfc-nci \
+    Tag \
+    com.android.nfc_extras
+        
+# NFC Config
+PRODUCT_COPY_FILES += \
+  $(DEVICE_PATH)/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
+  $(DEVICE_PATH)/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+  
 # Permissions
 PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
