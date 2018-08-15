@@ -26,6 +26,10 @@ $(call inherit-product, vendor/carbon/config/common.mk)
 # Device Path
 DEVICE_PATH := device/huawei/phone
 
+# Tablet specific overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay-carbon   
+    
 # Bootanimation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
