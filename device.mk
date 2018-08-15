@@ -24,4 +24,8 @@ DEVICE_PATH := device/huawei/phone
 
 # Phone specific overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay
+    
+# LCD
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+ro.sf.lcd_density=480
