@@ -1,7 +1,5 @@
 #
-# Copyright (C) 2018 The Android Open-Source Project
-# Copyright (C) 2018 Team OpenKirin
-# Copyright (C) 2018 Huawei-Kirin-Project
+# Copyright (C) 2018 CarbonRom
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,6 +17,12 @@
 # Inherit device configuration
 $(call inherit-product, device/huawei/phone/device.mk)
 
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+
+# Inherit Carbon product configuration
+$(call inherit-product, vendor/carbon/config/common.mk)
+
 # Device Path
 DEVICE_PATH := device/huawei/phone
 
@@ -26,11 +30,17 @@ DEVICE_PATH := device/huawei/phone
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# CarbonRom Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carbon.maintainer="Rcstar6696"
+    
 # Device identifier
 PRODUCT_BRAND := Android
 PRODUCT_MANUFACTURER := Huawei
 PRODUCT_PLATFORM := Kirin
-PRODUCT_NAME := aosp_huawei_phone
+PRODUCT_NAME := carbon_huawei_phone
 PRODUCT_DEVICE := phone
-PRODUCT_MODEL := AOSP on Huawei phones
+PRODUCT_MODEL := CarbonRom on Huawei Phones
+
+
 
