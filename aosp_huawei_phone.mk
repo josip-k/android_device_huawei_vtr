@@ -22,6 +22,10 @@ $(call inherit-product, device/huawei/phone/device.mk)
 # Device Path
 DEVICE_PATH := device/huawei/phone
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 # Device identifier
 PRODUCT_BRAND := Android
 PRODUCT_MANUFACTURER := Huawei
