@@ -16,6 +16,6 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_huawei_phone-userdebug
-add_lunch_combo aosp_huawei_phone-user
-add_lunch_combo aosp_huawei_phone-eng
+add_lunch_combo gzosp_vtr-userdebug
+add_lunch_combo gzosp_vtr-user
+add_lunch_combo gzosp_vtr-eng
