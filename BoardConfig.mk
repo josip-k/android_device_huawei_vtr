@@ -16,8 +16,8 @@
 # limitations under the License.
 #
 
-# inherit from Huawei common 
-include device/huawei/common/BoardConfigCommon.mk
+# inherit from Huawei common
+include device/huawei/kirin960-common/BoardConfigCommon.mk
 
 # OTA Assert
-TARGET_OTA_ASSERT_DEVICE := phone
+TARGET_OTA_ASSERT_DEVICE := vtr

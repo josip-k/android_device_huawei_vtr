@@ -16,6 +16,6 @@
 # limitations under the License.
 #
 
-# inherit Huawei Phone AOSP device config
+# inherit Huawei Phone GZOSP device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_huawei_phone.mk
+    $(LOCAL_DIR)/gzosp_vtr.mk

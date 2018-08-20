@@ -17,19 +17,19 @@
 #
 
 # Inherit from Huawei common
-$(call inherit-product, device/huawei/common/device-common.mk)
+$(call inherit-product, device/huawei/kirin960-common/kirin960.mk)
 
 # Device Path
-DEVICE_PATH := device/huawei/phone
+DEVICE_PATH := device/huawei/vtr
 
 # Phone specific overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
-    
+
 # Huawei Camera2
  PRODUCT_PACKAGES += \
-     HwCamera2    
-        
+     HwCamera2
+
 # LCD
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ro.sf.lcd_density=480
@@ -40,16 +40,16 @@ PRODUCT_PACKAGES += \
     libnfc-nci \
     Tag \
     com.android.nfc_extras
-        
+
 # NFC Config
 PRODUCT_COPY_FILES += \
   $(DEVICE_PATH)/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf \
   $(DEVICE_PATH)/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
-  
+
 # Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
-    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml
+    	frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
+    	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+    	frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
+    	frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml

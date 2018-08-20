@@ -17,20 +17,17 @@
 #
 
 # Inherit device configuration
-$(call inherit-product, device/huawei/phone/device.mk)
+$(call inherit-product, device/huawei/vtr/device.mk)
 
 # Device Path
-DEVICE_PATH := device/huawei/phone
+DEVICE_PATH := device/huawei/vtr
 
 # Bootanimation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier
-PRODUCT_BRAND := Android
-PRODUCT_MANUFACTURER := Huawei
-PRODUCT_PLATFORM := Kirin
-PRODUCT_NAME := aosp_huawei_phone
-PRODUCT_DEVICE := phone
-PRODUCT_MODEL := AOSP on Huawei phones
-
+PRODUCT_NAME := gzosp_vtr
+ PRODUCT_DEVICE := vtr
+PRODUCT_BRAND := Huawei
+PRODUCT_MODEL := P-10

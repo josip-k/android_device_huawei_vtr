@@ -17,4 +17,4 @@
 #
 
 # include Huawei common Kernel Build Setup
-include device/huawei/common/AndroidBoard.mk
+include device/huawei/kirin960-common/AndroidBoard.mk
