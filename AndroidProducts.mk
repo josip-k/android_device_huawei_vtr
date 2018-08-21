@@ -17,5 +17,6 @@
 #
 
 # inherit Huawei Phone GZOSP device config
+
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/gzosp_vtr.mk

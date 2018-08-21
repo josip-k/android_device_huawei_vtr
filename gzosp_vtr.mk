@@ -19,6 +19,9 @@
 # Inherit device configuration
 $(call inherit-product, device/huawei/vtr/device.mk)
 
+# Inherit some common stuff.
+$(call inherit-product, vendor/gzosp/config/common.mk)
+
 # Device Path
 DEVICE_PATH := device/huawei/vtr
 
