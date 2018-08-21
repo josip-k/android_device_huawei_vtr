@@ -27,8 +27,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
 # Huawei Camera2
- PRODUCT_PACKAGES += \
-     HwCamera2
+# PRODUCT_PACKAGES += \
+#      HwCamera2
 
 # LCD
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
